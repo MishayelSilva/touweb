@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUNETT ESCAPES</title>
+    <!---links with css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bar">
+        <a class="logo" href="index.html">LUNETT<span>ESCAPES</span></a>
+        <button id="menu" aria-label="Menu">X</button>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="packages.html">Destinations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="gallery">
+        <h1>Destinations</h1>
+        <p class="lead">A taste of where we can take you.</p>
+        <div class="grid">
+          <figure class="tile">
+            <img src="imgs\KUD_Aerial_2026.jpg" alt="Maldives" loading="lazy">
+            <figcaption>Maldives<small>Beach &amp; Island</small></figcaption>
+          </figure>
+          <figure class="tile">
+            <img src="imgs\images.jpg" alt="Kyoto" loading="lazy">
+            <figcaption>Kyoto<small>Cultural &amp; Heritage</small></figcaption>
+          </figure>
+          <figure class="tile">
+            <img src="imgs\images (1).jpg" alt="Everest Base Camp" loading="lazy">
+            <figcaption>Everest Base Camp<small>Adventure &amp; Trekking</small></figcaption>
+          </figure>
+          <figure class="tile">
+            <img src="imgs\images (2).jpg" alt="Dubai" loading="lazy">
+            <figcaption>Dubai<small>Family Holiday</small></figcaption>
+          </figure>
+          
+        </div>
+      </section>
+      <section>
+        <h2>Tour package categories</h2>
+        <br>
+        <div class="grid">
+          <div class="card">
+            <div class="ico">
+            </div>
+            <h3>Beach &amp; Island Getaways</h3>
+            <p>BI01 to BI03: sun, sand and snorkelling.</p>
+          </div>
+          <div class="card">
+            <div class="ico">
+            </div>
+            <h3>Cultural &amp; Heritage Tours</h3>
+            <p>CH01 to CH03: temples, ruins and ancient cities.</p>
+          </div>
+          <div class="card">
+            <div class="ico">
+            </div>
+            <h3>Adventure &amp; Trekking</h3>
+            <p>AT01 to AT02: mountain trails and camping.</p>
+          </div>
+          <div class="card">
+            <div class="ico">
+            </div>
+            <h3>Family Holiday Packages</h3>
+            <p>FM01 to FM02: kid-friendly stays and attractions.</p>
+          </div>
+          <div class="card">
+            <div class="ico">
+            </div>
+            <h3>Luxury &amp; Honeymoon Tours</h3>
+            <p>LH01 to LH02: private villas and romantic dinners.</p>
+          </div>
+        </div>
+      </section>
+            
+      <section id="packages">
+        <h2>Tour package catalog</h2>
+        <p class="lead">Prices are per person, based on twin sharing.</p>
+        <input type="search" id="q" placeholder="Search destination or package code" aria-label="Search packages" style="margin-bottom:1rem">
+        <div class="tableWrap">
+          <table id="pt">
+            <caption>Tour packages</caption>
+            <thead>
+              <tr>
+                <th>Package Code</th>
+                <th>Destination</th>
+                <th>Duration (Days/Nights)</th>
+                <th>Inclusions</th>
+                <th>Price Per Person (USD)</th>
+                <th>Availability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>BI01</td>
+                <td>Maldives</td>
+                <td>5D / 4N</td>
+                <td>Flights, water villa, breakfast, snorkelling</td>
+                <td>$1,450</td>
+                <td class="ok">Available</td>
+              </tr>
+              <tr>
+                <td>BI02</td>
+                <td>Bali, Indonesia</td>
+                <td>6D / 5N</td>
+                <td>Flights, beach resort, island tour</td>
+                <td>$980</td>
+                <td class="ok">Available</td>
+              </tr>
+              <tr>
+                <td>BI03</td>
+                <td>Mirissa &amp; Galle, Sri Lanka</td>
+                <td>4D / 3N</td>
+                <td>Hotel, whale watching, transfers</td>
+                <td>$420</td>
+                <td class="few">Few seats</td>
+              </tr>
+              <tr>
+                <td>CH01</td>
+                <td>Kyoto, Japan</td>
+                <td>7D / 6N</td>
+                <td>Flights, hotel, temple guide, rail pass</td>
+                <td>$1,890</td>
+                <td class="ok">Available</td>
+              </tr>
+              <tr>
+                <td>CH02</td>
+                <td>Cultural Triangle, Sri Lanka</td>
+                <td>5D / 4N</td>
+                <td>Hotel, Sigiriya, Kandy, guide</td>
+                <td>$520</td>
+                <td class="ok">Available</td>
+              </tr>
+              <tr>
+                <td>CH03</td>
+                <td>Cairo &amp; Luxor, Egypt</td>
+                <td>6D / 5N</td>
+                <td>Flights, hotel, Nile cruise</td>
+                <td>$1,100</td>
+                <td class="no">Waitlist</td>
+              </tr>
+              <tr>
+                <td>AT01</td>
+                <td>Everest Base Camp, Nepal</td>
+                <td>12D / 11N</td>
+                <td>Flights, guide, permits, lodges</td>
+                <td>$1,650</td>
+                <td class="few">Few seats</td>
+              </tr>
+              <tr>
+                <td>AT02</td>
+                <td>Ella &amp; Knuckles, Sri Lanka</td>
+                <td>4D / 3N</td>
+                <td>Guide, camping, meals</td>
+                <td>$380</td>
+                <td class="ok">Available</td>
+              </tr>
+              <tr>
+                <td>FM01</td>
+                <td>Dubai, UAE</td>
+                <td>5D / 4N</td>
+                <td>Flights, hotel, theme parks, desert safari</td>
+                <td>$1,250</td>
+                <td class="ok">Available</td>
+              </tr>
+              <tr>
+                <td>FM02</td>
+                <td>Singapore</td>
+                <td>5D / 4N</td>
+                <td>Flights, hotel, zoo, Sentosa pass</td>
+                <td>$1,180</td>
+                <td class="ok">Available</td>
+              </tr>
+              <tr>
+                <td>LH01</td>
+                <td>Santorini, Greece</td>
+                <td>7D / 6N</td>
+                <td>Flights, cliff suite, sunset cruise</td>
+                <td>$2,850</td>
+                <td class="few">Few seats</td>
+              </tr>
+              <tr>
+                <td>LH02</td>
+                <td>Seychelles</td>
+                <td>6D / 5N</td>
+                <td>Flights, private villa, spa, dinners</td>
+                <td>$2,600</td>
+                <td class="ok">Available</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="foot">
+        <div>
+          <h3>LUNETT ESCAPES (Pvt).Ltd</h3>
+          <p>
+            No. 67, Galle Road, Colombo 04, Sri Lanka <br />
+            Tel: +94 11 676 7676 <br />Email: Lunett@gmail.com
+          </p>
+          <p class="sos">24/7 Emergency Travel Helpline: +94 77 911 1191</p>
+        </div>
+
+        <div>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Destinations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="packages.html"> Tour Packages</a></li>
+            <li><a href="contact.html">Booking &amp; Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://youtube.com" target="_blank" rel="noopener"
+                >Youtube</a
+              >
+            </li>
+            <li>
+              <a href="https://wa.me/94779111991" target="_blank" rel="noopener"
+                >Whatsapp</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">© 2026 Lunett Escapes. All rights reserved.</p>
+    </footer>
+    
+  </body>
+</html>

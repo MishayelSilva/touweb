@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUNETT ESCAPES</title>
+    <!---links with css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bar">
+        <a class="logo" href="index.html">LUNETT<span>ESCAPES</span></a>
+        <button id="menu" aria-label="Menu">X</button>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="packages.html">Destinations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>Booking inquiry</h1>
+        <p class="lead">Tell us your plans and we'll reply within one working day.</p>
+        <form id="bf" aria-label="Booking inquiry form">
+          <div id="msg" role="status">
+            Thank you! Your inquiry has been received. We'll contact you shortly.
+          </div>
+          <div class="two">
+            <div>
+              <label for="n">Full name</label>
+              <input type="text" id="n" name="name" required>
+            </div>
+            <div>
+              <label for="e">Email address</label>
+              <input type="email" id="e" name="email" required>
+            </div>
+          </div>
+          <div class="two">
+            <div>
+              <label for="p">Contact number</label>
+              <input type="tel" id="p" name="phone" required>
+            </div>
+            <div>
+              <label for="d">Preferred travel date</label>
+              <input type="date" id="d" name="date" required>
+            </div>
+          </div>
+          <div class="two">
+            <div>
+              <label for="a">Adults</label>
+              <input type="number" id="a" name="adults" min="1" value="1">
+            </div>
+            <div>
+              <label for="c">Children</label>
+              <input type="number" id="c" name="children" min="0" value="0">
+            </div>
+          </div>
+          <div>
+            <label for="s">Selected package</label>
+            <select id="s" name="package">
+              <option value="">Choose a package</option>
+              <option value="BI01">BI01: Maldives</option>
+              <option value="BI02">BI02: Bali, Indonesia</option>
+              <option value="BI03">BI03: Mirissa &amp; Galle, Sri Lanka</option>
+              <option value="CH01">CH01: Kyoto, Japan</option>
+              <option value="CH02">CH02: Cultural Triangle, Sri Lanka</option>
+              <option value="CH03">CH03: Cairo &amp; Luxor, Egypt</option>
+              <option value="AT01">AT01: Everest Base Camp, Nepal</option>
+              <option value="AT02">AT02: Ella &amp; Knuckles, Sri Lanka</option>
+              <option value="FM01">FM01: Dubai, UAE</option>
+              <option value="FM02">FM02: Singapore</option>
+              <option value="LH01">LH01: Santorini, Greece</option>
+              <option value="LH02">LH02: Seychelles</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>Travel preferences</legend>
+            <label>
+            <input type="checkbox" name="pref" value="flight">
+            Flight booking required</label>
+            <label>
+            <input type="checkbox" name="pref" value="hotel">
+            Hotel / accommodation required</label>
+            <label>
+            <input type="checkbox" name="pref" value="insurance">
+            Travel insurance required</label>
+            <label>
+            <input type="checkbox" name="pref" value="transfer">
+            Airport transfers required</label>
+          </fieldset>
+          <div>
+            <label for="u">Purpose of inquiry</label>
+            <select id="u" name="purpose">
+              <option>New Package Booking</option>
+              <option>Modify Existing Booking</option>
+              <option>Cancellation Request</option>
+              <option>General Travel Inquiry</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="m">Message (optional)</label>
+            <textarea id="m" rows="3"></textarea>
+          </div>
+          <div>
+            <button class="btn" type="submit">Submit inquiry</button>
+            <button class="btn alt" type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="foot">
+        <div>
+          <h3>LUNETT ESCAPES (Pvt).Ltd</h3>
+          <p>
+            No. 67, Galle Road, Colombo 04, Sri Lanka <br />
+            Tel: +94 11 676 7676 <br />Email: Lunett@gmail.com
+          </p>
+          <p class="sos">24/7 Emergency Travel Helpline: +94 77 911 1191</p>
+        </div>
+
+        <div>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Destinations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="packages.html"> Tour Packages</a></li>
+            <li><a href="contact.html">Booking &amp; Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://youtube.com" target="_blank" rel="noopener"
+                >Youtube</a
+              >
+            </li>
+            <li>
+              <a href="https://wa.me/94779111991" target="_blank" rel="noopener"
+                >Whatsapp</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">© 2026 Lunett Escapes. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
